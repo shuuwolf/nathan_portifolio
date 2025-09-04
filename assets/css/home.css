@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'SohneBreit Kraftig';
+    src: url('../fonts/TestSohneBreit-Kraftig.woff2') format('woff2'),
+        url('../fonts/TestSohneBreit-Kraftig.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    /* Base Font-Size: 1rem */
+    font-size: 16px;
+}
+
+.glide{
+    z-index: 10;
+    inset: 0;
+}
+
+/* HEADER */
+
+header{
+    padding: 1rem 0px;
+}
+
+header nav a.logo{
+    display: block;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+}
+
+header nav ul{
+    gap: 4rem;
+}
+
+header nav ul li{
+    color: white;
+}
+
+header nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/* MAIN BANNER */
+
+main {
+    z-index: 9999!important;
+    background-color: rgba(166, 140, 139, 0.45);
+}
+
+main div.middle-screen{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.middle-screen h1{
+    font-family: 'SohneBreit Kraftig';
+    font-size: 5.25rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 4px 4px 1px #000000;
+}
+
+main div.middle-screen h3{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 10px;
+    color: white;
+}
+
+/* FOOTER */
+
+footer nav ul.social-media{
+    position: absolute;
+    right: 0px;
+    top: -12px;
+    justify-self: flex-end;
+}
+
+footer nav ul li{
+    color: white;
+}
+
+footer nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+footer nav ul li a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 500;
+    text-align: center;
+}

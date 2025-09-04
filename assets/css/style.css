@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'SohneBreit Kraftig';
+    src: url('../fonts/TestSohneBreit-Kraftig.woff2') format('woff2'),
+        url('../fonts/TestSohneBreit-Kraftig.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SohneBreit Buch';
+    src: url('../fonts/TestSohneBreit-Buch.woff2') format('woff2'),
+        url('../fonts/TestSohneBreit-Buch.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SohneBreit Leicht';
+    src: url('../fonts/TestSohneBreit-Leicht.woff2') format('woff2'),
+        url('../fonts/TestSohneBreit-Leicht.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    /* Base Font-Size: 1rem */
+    font-size: 16px;
+}
+
+body.full-page{
+    background-color: rgba(228, 226, 225, 1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgba(166, 140, 139, 1);
+    padding: 1rem 0px;
+    box-shadow: 0px 4px 15 0px rgba(0, 0, 0, 0.25);
+}
+
+header nav a.logo{
+    display: block;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+}
+
+header nav ul{
+    gap: 4rem;
+    margin: 0;
+}
+
+header nav ul li{
+    color: #000;
+}
+
+header nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+header nav ul li a.active{
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    place-items: center;
+    padding: 10rem 0px;
+    flex-grow: 1;
+}
+
+main h1{
+    font-family: 'SohneBreit Buch', sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: rgba(23, 26, 31, 1);
+    margin-bottom: 1rem;
+}
+
+main p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(47, 45, 44, 1);
+    margin: 0;
+}
+
+/* CONTACT SECTION */
+
+main section.contact p{
+    max-width: 420px;
+}
+
+main section.contact nav.contact-nav{
+    margin-top: 4.75rem;
+    max-width: 420px;
+}
+
+main section.contact nav.contact-nav ul{
+    display: flex;
+    gap: 1rem;
+    padding-left: 5rem;
+}
+
+main section.contact nav.contact-nav ul li a{
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+
+    width: fit-content;
+}
+
+/* ABOUT SECTION */
+
+main section.about p{
+    max-width: 560px;
+}
+
+main section.about h1{
+    max-width: 560px;
+}
+
+main section.about .about-list-row{
+    margin: 8rem 0px;
+}
+
+main section.about .about-list-row ul li{
+    font-family: 'SohneBreit Leicht', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.48px;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* FEATURE SECTION */
+
+main section.feature h2{
+    font-family: 'SohneBreit Buch', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.96px;
+    color: rgba(23, 26, 31, 1);
+}
+
+.risk-below-title{
+    border: 1px solid #848484;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url('../images/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.5rem 0px;
+}
+
+footer .logo{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+footer .logo h1{
+    font-family: 'SohneBreit Kraftig';
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+footer nav ul li{
+    color: white;
+}
+
+footer nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+footer nav ul li a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
