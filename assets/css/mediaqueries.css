@@ -1,0 +1,52 @@
+@media screen and (max-width:992px){
+    header {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 2rem 0px;
+    }
+
+    header nav a.logo {
+        margin-left: 1rem;
+    }
+
+    header nav a.logo, header nav a.logo img{
+        width: 38px;
+        height: 38px;
+    }
+
+    main section.contact nav.contact-nav {
+        margin-top: 5rem;
+        max-width: 420px;
+    }
+
+    main section.contact nav.contact-nav ul{
+        padding-left: 2rem;
+    }
+
+    main{
+        padding: 3rem 0px 8rem 0px;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 0.875rem;
+    }
+
+    footer{
+        padding: 1.5rem 0px;
+    }
+
+    footer nav{
+        flex-direction: column-reverse;
+    }
+
+    footer p {
+        position: static;
+        bottom: 0;
+        left: 0;
+        transform: none;
+    }
+}

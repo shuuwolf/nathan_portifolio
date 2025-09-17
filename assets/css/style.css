@@ -146,6 +146,11 @@ header nav ul li a::before {
     visibility: hidden;
 }
 
+header button.menu-mobile{
+    border: 0;
+    background-color: transparent;
+}
+
 /* MAIN */
 
 main {
@@ -292,12 +297,45 @@ main section.project p{
 }
 
 main section.project-grid .project-card{
+    will-change: opacity;
+    opacity: 0;
+
     max-width: 380px;
     width: 100%;
     margin-bottom: 5.75rem;
     text-decoration: none;
+    webkit-transition: opacity 1000ms linear;
+    -moz-transition: opacity 1000ms linear;
+    -ms-transition: opacity 1000ms linear;
+    -o-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
 }
 
+main section.project-grid .project-card.project-fade-effect{
+    opacity: 1;
+}
+
+main section.project-grid .project-card:hover .project-overlay{
+    display: grid;
+}
+
+main section.project-grid .project-card .project-overlay{
+    background-color: rgba(47, 45, 44, 0.65);
+    position: absolute;
+    inset: 0;
+
+    display: none;
+    place-items: center;
+    z-index: 30;
+}
+
+main section.project-grid .project-card .project-overlay h3{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
 
 main section.project-grid .project-info{
     padding-top: 1.5rem;

@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>Contact</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
     <!-- Inter Font Loader -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +21,7 @@
 
     <!-- APP CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/mediaqueries.css"/>
 </head>
 <body class="full-page">
     <header>
@@ -25,17 +31,21 @@
                     <img src="./assets/images/logo.png" width="58" height="58" alt="Logo">
                 </a>
 
-                <ul class="list-unstyled d-flex align-items-center">
+                <ul class="list-unstyled d-none d-lg-flex align-items-center ">
                     <li>
-                        <a href="./project-list.html">Projects</a>
+                        <a text="Projects" href="./project-list.html">Projects</a>
                     </li>
                     <li>
-                        <a href="./about.html">About</a>
+                        <a text="About" href="./about.html">About</a>
                     </li>
                     <li>
-                        <a href="./contact.html" class="active">Contact</a>
+                        <a text="Contact" href="#!">Contact</a>
                     </li>
                 </ul>
+
+                <button class="menu-mobile d-lg-none">
+                    <img loading="lazy" src="./assets/icons/mobile-menu.svg" width="32px" height="20px" alt="Menu Mobile">
+                </button>
             </nav>
         </div>
     </header>
@@ -47,7 +57,7 @@
                     <div class="col-md-6">
                         <h1>Let’s Connect.</h1>
 
-                        <p>Whether you’re planning a new restaurant, renovating your home, or simply looking for design direction, I’d love to hear more about your project.</p>
+                        <p>I’m always open to new opportunities, collaborations, and conversations. If you’d like to learn more about my work or discuss how I can contribute to your team, feel free to reach out.</p>
 
                         <nav class="contact-nav">
                             <ul class="list-unstyled d-flex flex-column mb-5">
@@ -72,22 +82,22 @@
                                 </li>
                             </ul>
 
-                            <ul class="list-unstyled d-flex justify-content-center ps-0 mb-0">
+                            <ul class="list-unstyled d-none d-lg-flex justify-content-center ps-0 mb-0">
                                 <li>
-                                    <a href="#!">
-                                        <img src="./assets/icons/instagram-black.svg" width="50" height="50" alt="Instragram">
+                                    <a href="https://www.instagram.com/nowerd/" target="_blank">
+                                        <img src="./assets/icons/instagram-black.svg" width="50" height="50" alt="Instagram">
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#!">
-                                        <img src="./assets/icons/linkedin-black.svg" width="50" height="50" alt="Instragram">
+                                    <a href="https://www.linkedin.com/in/nathan-everett-reed/" target="_blank">
+                                        <img src="./assets/icons/linkedin-black.svg" width="50" height="50" alt="Linkedin">
                                     </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 d-none d-md-block">
                         <img src="./assets/images/contact-img.png" class="w-100" alt="Contact IMG">
                     </div>
                 </div>
@@ -98,13 +108,13 @@
     <footer>
         <div class="container">
             <nav class="row">
-                <div class="col-md-5 d-flex align-items-center">
+                <div class="col-lg-5 d-none d-lg-flex align-items-center ">
                     <a href="/" class="logo">
                         <h1>NATHAN REED</h1>
                     </a>
                 </div>
-                <div class="col-md-4 d-flex flex-column justify-content-end position-relative">
-                    <ul class="list-unstyled d-flex align-items-center justify-content-center gap-4">
+                <div class="col-lg-4 d-flex flex-column justify-content-end position-relative">
+                    <ul class="list-unstyled d-none d-lg-flex align-items-center justify-content-center gap-4 ">
                         <li>
                             <a href="./project-list.html">Projects</a>
                         </li>
@@ -114,22 +124,22 @@
                         </li>
                         <li> | </li>
                         <li>
-                            <a href="./contact.html">Contact</a>
+                            <a href="#!">Contact</a>
                         </li>
                     </ul>
                     <p>©2025 Nathan Reed. All rights reserved</p>
                 </div>
-                <div class="col-md-3 d-flex align-items-center justify-content-end">
+                <div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end mb-4 mb-lg-0">
                     <ul class="social-media list-unstyled d-flex align-items-center gap-3 mb-0">
                         <li>
-                            <a href="#!">
-                                <img src="./assets/icons/instagram.svg" width="50" height="50" alt="Instragram">
+                            <a href="https://www.instagram.com/nowerd/" target="_blank">
+                                <img src="./assets/icons/instagram.svg" width="50" height="50" alt="Instagram">
                             </a>
                         </li>
 
                         <li>
-                            <a href="#!">
-                                <img src="./assets/icons/linkedin.svg" width="50" height="50" alt="Instragram">
+                            <a href="https://www.linkedin.com/in/nathan-everett-reed/" target="_blank">
+                                <img src="./assets/icons/linkedin.svg" width="50" height="50" alt="Linkedin">
                             </a>
                         </li>
                     </ul>

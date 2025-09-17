@@ -57,5 +57,27 @@ if (currentPage === 'project-list'){
             }
         });
     });
+
+    const projects = document.querySelectorAll('.project-card');
+
+    const projectObserverCallback = (projectsToWatch, projectObserver) => {
+        projectsToWatch.forEach(projectToWatch => {
+            if(projectToWatch.isIntersecting) {
+                projectToWatch.target.classList.add('project-fade-effect');
+                //projectObserver.unobserve(projectToWatch.target);
+            }else{
+                projectToWatch.target.classList.remove('project-fade-effect');
+            }
+        })
+    }
+
+    const projectObserverOptions = {
+        threshold: .25
+    }
+    const projectObserver = new IntersectionObserver(projectObserverCallback, projectObserverOptions)
+
+    projects.forEach(project => {
+        projectObserver.observe(project);
+    })
 }
     
