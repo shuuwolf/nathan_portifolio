@@ -79,4 +79,56 @@
         width: 38px;
         height: 38px;
     }
+
+    /* PROJECT LIST */
+    .nav-filter {
+        width: 100%;
+        max-width: none;
+        margin: 6rem 0 4rem 0;
+        place-items: baseline;
+    }
+
+    .nav-filter ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    main section.project-grid .project-card {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width:768px){
+    /* PROJECT LIST */
+
+    main section.project p {
+        max-width: 320px;
+    }
+
+    .nav-filter {
+        width: 100%;
+        max-width: none;
+        margin: 5rem 0 3rem 0;
+        place-items: center;
+    }
+
+    .nav-filter ul li a {
+        font-size: 0.625rem;
+        padding: 0.25rem 0.625rem;
+    }
+
+    main section.project-grid .project-card {
+        max-width: 196px;
+        margin-bottom: 3rem;
+    }
+
+    main section.project-grid .project-info h2 {
+        font-size: 0.75rem;
+    }
+
+    main section.project-grid .project-info p {
+        font-size: 0.625rem;
+    }
+
+    
 }

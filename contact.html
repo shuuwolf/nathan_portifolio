@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/mediaqueries.css"/>
 </head>
 <body class="full-page">
-    <header>
+    <header class="position-relative">
         <div class="container">
             <nav class="d-flex align-items-center justify-content-between">
                 <a href="./index.html" class="logo">
@@ -43,10 +43,26 @@
                     </li>
                 </ul>
 
-                <button class="menu-mobile d-lg-none">
-                    <svg width="32" height="20" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.931885 1.28516H32.9319M0.931885 11.467H32.9319M0.931885 21.6488H32.9319" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <button id="mobileMenuTrigger" class="menu-mobile d-lg-none">
+                    <div class="menu-mobile-icon pe-none">
+                        <svg width="32" height="20" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.931885 1.28516H32.9319M0.931885 11.467H32.9319M0.931885 21.6488H32.9319" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="mobile-overlay">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a text="Projects" href="./project-list.html">Projects</a>
+                            </li>
+                            <li>
+                                <a text="About" href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a text="Contact" href="#!">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </button>
             </nav>
         </div>

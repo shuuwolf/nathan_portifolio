@@ -96,7 +96,15 @@ body.full-page{
     flex-direction: column;
 }
 
+body.mobile-menu-open{
+    overflow: hidden;
+}
+
 /* HEADER */
+
+body.mobile-menu-open header{
+    background-color: rgba(130, 103, 102, 1)!important;
+}
 
 header{
     background-color: rgba(166, 140, 139, 1);
@@ -134,6 +142,62 @@ header nav ul li a.active{
 
 header nav ul li a:hover{
     font-weight: bold;
+}
+
+header button.menu-mobile{
+    border: 0;
+    background-color: transparent;
+}
+
+header button.menu-mobile svg{
+    color: rgba(47, 45, 44, 1);
+    user-select: none;
+    pointer-events: none;
+}
+
+header button.menu-mobile.mobile-menu-open svg{
+    color: rgba(255, 255, 255, 1);
+}
+
+#mobileMenuTrigger{
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+#mobileMenuTrigger div.mobile-overlay{
+    position: absolute;
+    height: calc(100vh - 102px);
+    width: 100vw;
+    top: 102px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: end;
+    z-index: 99;
+    background-color: rgba(130, 103, 102, 1);
+}
+
+#mobileMenuTrigger ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+#mobileMenuTrigger.mobile-menu-open div.mobile-overlay{
+    display: flex;
+}
+
+#mobileMenuTrigger ul li a{
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1rem;
+    color: white;
 }
 
 /* PREVENT SHIFTING */
@@ -292,6 +356,7 @@ main section.project p{
 }
 
 .nav-filter ul li a.active{
+    font-weight: 500;
     color: white;
     background-color: #93681B;
 }
@@ -401,6 +466,14 @@ main section.project-detail .project-detail-information hr{
 }
 
 /* FOOTER */
+
+body.mobile-menu-open footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99999;
+    background: rgba(130, 103, 102, 1);
+}
 
 footer {
     background-image: url('../images/footer-bg.png');
