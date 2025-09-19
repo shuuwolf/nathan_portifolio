@@ -28,13 +28,43 @@ buttonMobileTrigger.addEventListener("click", (e) => {
 const currentPage = document.querySelector("body").getAttribute("page");
 
 if (currentPage === 'about'){
-    new Glide('.glide', {
+
+    new Glide('.glide-press', {
         type: 'carousel',
         startAt: 0,
         perView: 4,
+        draggable: true,
         gap: 24,
         hoverpause: false,
         animationTimingFunc: 'ease-out',
+
+        breakpoints:{
+            992:{
+                perView: 2,
+            },
+            540:{
+                perView: 1,
+            },
+        }
+    }).mount()
+
+    new Glide('.glide-awards', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 4,
+        draggable: true,
+        gap: 24,
+        hoverpause: false,
+        animationTimingFunc: 'ease-out',
+
+        breakpoints:{
+            992:{
+                perView: 2,
+            },
+            540:{
+                perView: 1,
+            },
+        }
     }).mount()
 }
 

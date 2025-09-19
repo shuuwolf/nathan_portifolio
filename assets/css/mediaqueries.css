@@ -1,19 +1,4 @@
 @media screen and (max-width:992px){
-    header {
-        background-color: transparent;
-        box-shadow: none;
-        padding: 2rem 0px;
-    }
-
-    header nav a.logo {
-        margin-left: 1rem;
-    }
-
-    header nav a.logo, header nav a.logo img{
-        width: 38px;
-        height: 38px;
-    }
-
     main section.contact nav.contact-nav {
         margin-top: 5rem;
         max-width: 420px;
@@ -21,10 +6,6 @@
 
     main section.contact nav.contact-nav ul{
         padding-left: 2rem;
-    }
-
-    main:not(#home){
-        padding: 3rem 0px 8rem 0px;
     }
 
     main h1 {
@@ -96,9 +77,37 @@
     main section.project-grid .project-card {
         max-width: 320px;
     }
+
+    .about-project-list{
+        max-width: 500px;
+    }
+
+    main section.feature h2{
+        font-size: 1.5rem;
+        color: #000000;
+    }
 }
 
 @media screen and (max-width:768px){
+    header {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 2rem 0px;
+    }
+
+    header nav a.logo {
+        margin-left: 1rem;
+    }
+
+    header nav a.logo, header nav a.logo img{
+        width: 38px;
+        height: 38px;
+    }
+
+    main:not(#home){
+        padding: 3rem 0px 8rem 0px;
+    }
+
     /* PROJECT LIST */
 
     main section.project p {
@@ -117,8 +126,12 @@
         padding: 0.25rem 0.625rem;
     }
 
+    main{
+        display: block;
+    }
+
     main section.project-grid .project-card {
-        max-width: 196px;
+        max-width: 240px;
         margin-bottom: 3rem;
     }
 
@@ -130,5 +143,50 @@
         font-size: 0.625rem;
     }
 
+    main section.about h1 {
+        max-width: none;
+    }
+
+    main section.about p {
+        max-width: none;
+        text-align: justify;
+    }
+
+    .glide__bullets {
+        gap: 0.25rem;
+        margin-top: 1.5rem;
+    }
+
+    .glide__bullets .glide__bullet {
+        width: 8px;
+        height: 8px;
+    }
+
+    footer p {
+        width: 100%;
+        white-space: wrap;
+    }
+
+    main section.about .about-list-row {
+        margin: 3.75rem 0 5.625rem 0;
+    }
     
+    main section.about .about-list-row ul li {
+        font-size: 1.25rem;
+    }
+
+    main section.feature h3.feature-subtitle{
+        font-size: 1rem;
+    }
+
+    main section.project-grid .project-card .project-overlay h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:540px){
+    main section.project-grid .project-card {
+        max-width: 190px;
+        margin-bottom: 3rem;
+    }
 }
