@@ -167,7 +167,17 @@ footer nav ul li a{
 }
 
 footer nav ul li a:hover{
-    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* PREVENT SHIFTING */
+footer nav ul li a::before { 
+    display: block;
+    content: attr(text);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 footer p{

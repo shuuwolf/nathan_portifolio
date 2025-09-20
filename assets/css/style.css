@@ -51,6 +51,10 @@
     gap: 5rem !important;
 }
 
+.gy-5rem{
+    --bs-gutter-y: 5rem !important;
+}
+
 /* GLIDER */
 
 .glide__track{
@@ -257,6 +261,20 @@ main section.contact p{
     max-width: 420px;
 }
 
+main section.contact .img-fade{
+    will-change: opacity;
+    opacity: 0;
+    webkit-transition: opacity 1000ms linear;
+    -moz-transition: opacity 1000ms linear;
+    -ms-transition: opacity 1000ms linear;
+    -o-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}
+
+main section.contact .img-fade.fade-effect{
+    opacity: 1;
+}
+
 main section.contact nav.contact-nav{
     margin-top: 4.75rem;
     max-width: 420px;
@@ -338,7 +356,7 @@ main section.feature .feature-card h3{
 }
 
 main section.feature .feature-card time{
-    font-size: 0.825rem;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.64;
     color: rgba(0, 0, 0, 1);
@@ -451,7 +469,22 @@ main section.project-detail h1{
     font-size: 2.25rem;
     line-height: 1;
     letter-spacing: calc(0.16px * 6);
-    margin-bottom: 5.25rem;
+    margin:0;
+    margin-bottom: 5rem;
+}
+
+main section.project-detail img{
+    will-change: opacity;
+    opacity: 0;
+    webkit-transition: opacity 1000ms linear;
+    -moz-transition: opacity 1000ms linear;
+    -ms-transition: opacity 1000ms linear;
+    -o-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}
+
+main section.project-detail img.fade-effect{
+    opacity: 1;
 }
 
 main section.project-detail .project-detail-information{
@@ -532,7 +565,17 @@ footer nav ul li a{
 }
 
 footer nav ul li a:hover{
-    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* PREVENT SHIFTING */
+footer nav ul li a::before { 
+    display: block;
+    content: attr(text);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 footer p{

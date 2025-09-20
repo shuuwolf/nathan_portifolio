@@ -133,4 +133,52 @@ if (currentPage === 'project-list'){
         projectObserver.observe(project);
     })
 }
+
+if (currentPage === 'contact'){
+    const projects = document.querySelectorAll('.img-fade');
+
+    const projectObserverCallback = (projectsToWatch, projectObserver) => {
+        projectsToWatch.forEach(projectToWatch => {
+            if(projectToWatch.isIntersecting) {
+                projectToWatch.target.classList.add('fade-effect');
+                //projectObserver.unobserve(projectToWatch.target);
+            }else{
+                projectToWatch.target.classList.remove('fade-effect');
+            }
+        })
+    }
+
+    const projectObserverOptions = {
+        threshold: .25
+    }
+    const projectObserver = new IntersectionObserver(projectObserverCallback, projectObserverOptions)
+
+    projects.forEach(project => {
+        projectObserver.observe(project);
+    })
+}
+
+if (currentPage === 'project-detail'){
+    const projects = document.querySelectorAll('section.project-detail img');
+
+    const projectObserverCallback = (projectsToWatch, projectObserver) => {
+        projectsToWatch.forEach(projectToWatch => {
+            if(projectToWatch.isIntersecting) {
+                projectToWatch.target.classList.add('fade-effect');
+                //projectObserver.unobserve(projectToWatch.target);
+            }else{
+                projectToWatch.target.classList.remove('fade-effect');
+            }
+        })
+    }
+
+    const projectObserverOptions = {
+        threshold: .25
+    }
+    const projectObserver = new IntersectionObserver(projectObserverCallback, projectObserverOptions)
+
+    projects.forEach(project => {
+        projectObserver.observe(project);
+    })
+}
     
