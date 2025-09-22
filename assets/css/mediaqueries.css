@@ -93,6 +93,11 @@
         max-width: none;
         width: 100%;
     }
+
+    .padding-fix{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -113,10 +118,6 @@
 
     main:not(#home){
         padding: 3rem 0px 8rem 0px;
-    }
-
-    #mobileMenuTrigger ul {
-        margin-right: 3rem;
     }
 
     /* PROJECT LIST */

@@ -532,7 +532,7 @@ body.mobile-menu-open footer{
 }
 
 footer {
-    background-image: url('../images/footer-bg.png');
+    background-image: url('../images/footer-bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2.5rem 0px;
