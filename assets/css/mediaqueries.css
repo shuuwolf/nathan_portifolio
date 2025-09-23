@@ -75,7 +75,7 @@
     }
 
     main section.project-grid .project-card {
-        max-width: 320px;
+        max-width: 50%;
     }
 
     .about-project-list{
@@ -143,7 +143,7 @@
     }
 
     main section.project-grid .project-card {
-        max-width: 240px;
+        /* max-width: 240px; */
         margin-bottom: 3rem;
     }
 
@@ -219,11 +219,6 @@
 }
 
 @media screen and (max-width:540px){
-    main section.project-grid .project-card {
-        max-width: 190px;
-        margin-bottom: 3rem;
-    }
-
     #mobileMenuTrigger ul {
         margin-right: 1rem;
     }
