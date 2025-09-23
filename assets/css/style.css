@@ -47,6 +47,10 @@
     margin-bottom: 7.5rem !important;
 }
 
+.mb-10rem{
+    margin-bottom: 10.625rem !important;
+}
+
 .gap-5rem{
     gap: 5rem !important;
 }
@@ -233,7 +237,7 @@ header button.menu-mobile{
 main {
     display: grid;
     place-items: center;
-    padding: 10rem 0px;
+    padding: 10rem 0 12.5rem 0;
     flex-grow: 1;
 }
 
