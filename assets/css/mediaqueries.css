@@ -1,3 +1,10 @@
+@media screen and (max-width:1250px){
+    main section.feature .feature-card img{
+        width: 100%!important;
+        height: auto!important;
+    }
+}
+
 @media screen and (max-width:992px){
     main section.contact nav.contact-nav {
         margin-top: 5rem;
@@ -87,6 +94,13 @@
         color: #000000;
     }
 
+    main section.about .about-list-row {
+        margin: 3.75rem 0 5.625rem 0;
+
+        display: flex;
+        justify-content: end;
+    }
+
     /* PROJECT DETAIL */
 
     main section.project-detail .project-detail-information {
@@ -97,6 +111,10 @@
     .padding-fix{
         padding-left: 0px!important;
         padding-right: 0px!important;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        top: 77px!important;
     }
 }
 
@@ -164,14 +182,10 @@
         text-align: justify;
     }
 
-    .glide__bullets {
-        gap: 0.25rem;
-        margin-top: 1.5rem;
-    }
-
-    .glide__bullets .glide__bullet {
+    .swiper-pagination-bullet {
         width: 8px;
         height: 8px;
+        margin: 0 2px!important;
     }
 
     footer p {
@@ -179,8 +193,8 @@
         white-space: wrap;
     }
 
-    main section.about .about-list-row {
-        margin: 3.75rem 0 5.625rem 0;
+    .about-project-list {
+        max-width: 310px;
     }
     
     main section.about .about-list-row ul li {
@@ -203,6 +217,11 @@
         font-size: 0.625rem;
     }
 
+    
+    .swiper-button-prev, .swiper-button-next {
+        top: 67px!important;
+    }
+
     /* PROJECT DETAIL */
     main section.project-detail h1 {
         margin-bottom: 1rem;
@@ -218,7 +237,28 @@
     }
 }
 
-@media screen and (max-width:540px){
+@media screen and (max-width:580px){
+    .swiper-button-prev {
+        top: 88px!important;
+        left: -1.5rem!important;
+    }
+
+    .swiper-button-next {
+        top: 88px!important;
+        right: -1.5rem!important;
+    }
+
+    .mobile-slider-max-width{
+        max-width: 372px;
+        margin: 0 auto;
+    }
+
+    main section.feature h3.feature-subtitle {
+        display: block;
+        max-width: 286px;
+        margin: 0 auto;
+    }
+
     #mobileMenuTrigger ul {
         margin-right: 1rem;
     }

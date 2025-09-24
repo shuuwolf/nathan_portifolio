@@ -28,44 +28,93 @@ buttonMobileTrigger.addEventListener("click", (e) => {
 const currentPage = document.querySelector("body").getAttribute("page");
 
 if (currentPage === 'about'){
-
-    new Glide('.glide-press', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 4,
-        draggable: true,
-        gap: 24,
-        hoverpause: false,
-        animationTimingFunc: 'ease-out',
-
-        breakpoints:{
-            992:{
-                perView: 2,
+    new Swiper('.swiper-press', {
+        loop: true,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 24,
+        pagination: {
+            el: '.swiper-pagination-press',
+            clickable: true,
+            dynamicBullets: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-press',
+            prevEl: '.swiper-button-prev-press',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
             },
-            540:{
-                perView: 1,
+            580: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
             },
+            768: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            992: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+            }
         }
-    }).mount()
+    });
 
-    new Glide('.glide-awards', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 4,
-        draggable: true,
-        gap: 24,
-        hoverpause: false,
-        animationTimingFunc: 'ease-out',
-
-        breakpoints:{
-            992:{
-                perView: 2,
+    new Swiper('.swiper-awards', {
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
+        pagination: {
+            el: '.swiper-pagination-awards',
+            clickable: true,
+            dynamicBullets: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-awards',
+            prevEl: '.swiper-button-prev-awards',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                loop: true,
             },
-            540:{
-                perView: 1,
+            580: {
+                slidesPerView: 2,
+                loop: true,
             },
+            768: {
+                slidesPerView: 3,
+                loop: true,
+            },
+            992: {
+                slidesPerView: 4,
+            }
         }
-    }).mount()
+    });
+
+    const projects = document.querySelectorAll('div.swiper-slide img');
+
+    const projectObserverCallback = (projectsToWatch, projectObserver) => {
+        projectsToWatch.forEach(projectToWatch => {
+            if(projectToWatch.isIntersecting) {
+                projectToWatch.target.classList.add('show-fade');
+                //projectObserver.unobserve(projectToWatch.target);
+            }else{
+                projectToWatch.target.classList.remove('show-fade');
+            }
+        })
+    }
+
+    const projectObserverOptions = {
+        threshold: .25
+    }
+    const projectObserver = new IntersectionObserver(projectObserverCallback, projectObserverOptions)
+
+    projects.forEach(project => {
+        projectObserver.observe(project);
+    })
 }
 
 if (currentPage === 'project-list'){
