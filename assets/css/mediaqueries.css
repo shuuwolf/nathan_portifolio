@@ -86,7 +86,7 @@
     }
 
     .about-project-list{
-        max-width: 500px;
+        max-width: 480px;
     }
 
     main section.feature h2{
@@ -192,6 +192,10 @@
     .about-project-list {
         max-width: 310px;
     }
+
+    main section.about .about-list-row {
+        justify-content: center;
+    }
     
     main section.about .about-list-row ul li {
         font-size: 1.25rem;
@@ -212,7 +216,6 @@
     main section.feature .feature-card time {
         font-size: 0.625rem;
     }
-
     
     .swiper-button-prev, .swiper-button-next {
         top: 67px!important;
@@ -241,6 +244,10 @@
     .swiper-button-prev {
         top: 88px!important;
         left: -1.5rem!important;
+    }
+
+    .swiper-wrapper{
+        padding-bottom: 3rem;
     }
 
     .swiper-button-next {
