@@ -24,7 +24,7 @@
     }
 
     footer{
-        padding: 1.5rem 0px;
+        padding: 1rem 0px;
     }
 
     footer nav{
@@ -125,17 +125,13 @@
         padding: 2rem 0px;
     }
 
-    header nav a.logo {
-        margin-left: 1rem;
-    }
-
     header nav a.logo, header nav a.logo img{
         width: 38px;
         height: 38px;
     }
 
     main:not(#home){
-        padding: 3rem 0px 8rem 0px;
+        padding: 3rem 0px 10rem 0px;
     }
 
     /* PROJECT LIST */
@@ -235,6 +231,10 @@
     main section.project-detail .project-detail-information p {
         font-size: 0.75rem;
     }
+
+    #mobileMenuTrigger ul {
+        margin-right: 2rem;
+    }
 }
 
 @media screen and (max-width:580px){
@@ -257,9 +257,5 @@
         display: block;
         max-width: 286px;
         margin: 0 auto;
-    }
-
-    #mobileMenuTrigger ul {
-        margin-right: 1rem;
-    }
+    }    
 }

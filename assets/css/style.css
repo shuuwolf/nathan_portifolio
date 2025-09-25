@@ -157,6 +157,7 @@ header nav a.logo{
     border-radius: 50%;
     width: 58px;
     height: 58px;
+    margin-left: 1rem;
 }
 
 header nav ul{
@@ -177,12 +178,8 @@ header nav ul li a{
     transition: all 0.3s;
 }
 
-header nav ul li a.active{
-    font-weight: bold;
-}
-
 header nav ul li a:hover{
-    font-weight: bold;
+    font-weight: 600;
 }
 
 header button.menu-mobile{
@@ -592,9 +589,9 @@ footer .logo{
 footer .logo h1{
     font-family: 'SohneBreit Kraftig';
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 1;
-    letter-spacing: 6px;
+    letter-spacing: calc(0.16px * 15);
     margin: 0;
 }
 
