@@ -193,6 +193,10 @@
         max-width: 310px;
     }
 
+    section.feature{
+        margin-top: 5.625rem;
+    }
+
     main section.about .about-list-row {
         justify-content: center;
     }
